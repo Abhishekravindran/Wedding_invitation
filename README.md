@@ -35,7 +35,7 @@ const weddingVenue = new Location('Arham Bhavan, Vijaynagar');
 
     // your presence is requested
     (new Wedding()).acceptInvitation(
-        window.open('https://sonali.netlify.app/](https://lavisha-weds-abhishek.netlify.app/')
+        window.open('https://lavisha-weds-abhishek.netlify.app/](https://lavisha-weds-abhishek.netlify.app/')
     );
 })();
 
@@ -47,5 +47,5 @@ const weddingVenue = new Location('Arham Bhavan, Vijaynagar');
 
 ### Show your support by leaving a star! :hugs:
 
-[![Stargazers repo roster for @vinitshahdeo/Wedding-Invitation](https://github.com/Abhishekravindran/Wedding_invitation)
+[![Stargazers repo roster for @https://github.com/Abhishekravindran/Wedding_invitation](https://github.com/Abhishekravindran/Wedding_invitation)
 
