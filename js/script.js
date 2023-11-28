@@ -87,7 +87,7 @@ var styles2 = [
 
 console.log('\n\n%c SAVE THE DATE: Jan 21, 2024!', styles);
 
-console.log('%cYour presence is requested!%c\n\nRegards: Vinit Shahdeo', styles1, styles2);
+console.log('%cYour presence is requested!%c\n\nRegards: Lavisha & Abhishek', styles1, styles2);
 
 console.log(
     `%cShaadi me zaroor aana!\n\n`,
