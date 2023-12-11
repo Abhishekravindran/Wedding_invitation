@@ -11,16 +11,15 @@
 //     console.log('Shaadi me zaroor aana');
 // });
 
-// Wait for the DOM to be ready
+// Automatically play audio on page load
 document.addEventListener('DOMContentLoaded', function () {
-    // Play audio on page load
     document.getElementById("my_audio").play();
-    
-    // Listen for the 'beforeunload' event to stop the audio when the user leaves the page
-    window.addEventListener('beforeunload', function () {
-        document.getElementById("my_audio").pause();
-        document.getElementById("my_audio").currentTime = 0; // Reset the audio to the beginning
-    });
+});
+
+// Stop audio when the user leaves the page
+window.addEventListener('beforeunload', function () {
+    document.getElementById("my_audio").pause();
+    document.getElementById("my_audio").currentTime = 0;
 });
 
 
