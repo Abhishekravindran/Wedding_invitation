@@ -31,6 +31,31 @@
       <link rel="stylesheet" href="./css/style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
+   <button id="addReminderButton">Add to Calendar</button>
+
+   <script>
+   document.addEventListener('DOMContentLoaded', function() {
+       var addReminderButton = document.getElementById("addReminderButton");
+   
+       addReminderButton.addEventListener('click', function() {
+           var event = new Event('click');
+           window.dispatchEvent(event);
+   
+           var eventDate = new Date("Jan 21, 2024 00:00:00");
+           var options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+           var eventDetails = {
+               title: "Your Event Title",
+               description: "Description of your event",
+               location: "Event Location",
+               start: eventDate,
+               end: eventDate,
+           };
+           var calendarEvent = new CustomEvent('add-to-calendar', { detail: eventDetails });
+           window.dispatchEvent(calendarEvent);
+       });
+   });
+   </script>
+
    <body>
       <!-- partial:index.partial.html -->
       <div class="sakura-falling"></div>
