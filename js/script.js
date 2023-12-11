@@ -6,24 +6,23 @@
       $('.sakura-falling').sakura();
 })(jQuery);
 
-/**
- *
- * Despite so many new Bollywood and English song options, I prefered to use two-decade-old song, Din Shagna Da!
- *
- * Ever attended a North Indian Wedding? As soon as the DJ plays Din Shagna Da song, it means that the much-awaited moment is here
- * and the bride is all set to put her first foot forward to the wedding venue under a breathtaking phoolon ki chaadar.
- * Let's keep the sky-high status of this song untouched!
- *
- * When the website is backed up with a soul-stirring track, the feeling becomes absolutely surreal. 
- * Choose a heart-touching track! 🎵 ❤️
- *
- * Listen here: https://youtu.be/X0MDALpV29s
- *
- */
-$(document).on('click', function(){
+// $(document).on('click', function(){
+//     document.getElementById("my_audio").play();
+//     console.log('Shaadi me zaroor aana');
+// });
+
+// Wait for the DOM to be ready
+document.addEventListener('DOMContentLoaded', function () {
+    // Play audio on page load
     document.getElementById("my_audio").play();
-    console.log('Shaadi me zaroor aana');
+    
+    // Listen for the 'beforeunload' event to stop the audio when the user leaves the page
+    window.addEventListener('beforeunload', function () {
+        document.getElementById("my_audio").pause();
+        document.getElementById("my_audio").currentTime = 0; // Reset the audio to the beginning
+    });
 });
+
 
 // Set the date we're counting down to
 var countDownDate = new Date("Jan 21, 2024 00:00:00").getTime();
