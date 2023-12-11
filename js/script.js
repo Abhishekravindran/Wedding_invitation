@@ -12,7 +12,7 @@
 // });
 
 // Automatically play audio on page load
-$(document).addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("my_audio").play();
 });
 
