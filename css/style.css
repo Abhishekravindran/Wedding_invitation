@@ -464,8 +464,8 @@ body {
 
 
 #time {
-    width: 270px;
-    height: 230px;
+    width: 230px;
+    height: 270px;
     padding: 5px; /* Adjust the padding to make it smaller */
     background-color: #eee;
     border-radius: 5px; /* Adjust the border-radius if needed */
