@@ -611,3 +611,24 @@ a {
             100% { left: -20px; }
         }
 
+.clickable-button {
+            display: inline-block;
+            padding: 8px 16px;
+            border: 1px solid #ffffff;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: transparent;
+            cursor: pointer; /* Add pointer cursor to indicate clickability */
+            animation: none; /* Initially, no animation */
+        }
+
+        .wiggle {
+            animation: wiggle 0.5s ease infinite; /* Add the wiggle animation */
+        }
+
+        @keyframes wiggle {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
