@@ -22,24 +22,7 @@ window.addEventListener('beforeunload', function () {
     document.getElementById("my_audio").currentTime = 0;
 });
 
-document.getElementById('viewPdfButton').addEventListener('click', function() {
-            this.classList.toggle('wiggle');
-            openPdfInIframe();
-        });
 
-        function openPdfInIframe() {
-            // Create an iframe element
-            var iframe = document.createElement('iframe');
-            
-            // Set attributes for the iframe
-            iframe.src = 'https://raw.githubusercontent.com/Abhishekravindran/Wedding_invitation/main/invitation/wedding_invitation.pdf';
-            iframe.width = '100%';
-            iframe.height = '600px';
-            iframe.style.border = 'none';
-
-            // Append the iframe to the document body
-            document.body.appendChild(iframe);
-        }
 // Set the date we're counting down to
 var countDownDate = new Date("Jan 21, 2024 00:00:00").getTime();
 
