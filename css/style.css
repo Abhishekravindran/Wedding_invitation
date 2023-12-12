@@ -590,6 +590,7 @@ a {
 
 
 .animated-button {
+    font-weight: bold;
     animation: wiggle 1s infinite;
 }
 
