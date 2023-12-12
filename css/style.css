@@ -482,11 +482,13 @@ body {
 	color: #fff;
 	padding: 8px;
 	margin-right: 8px;
+	font-weight: bold;
 } */
 
 .venue a {
 	text-decoration: none;
 	color: #fff;
+	font-weight: bold;
 }
 
 .container {
@@ -585,6 +587,7 @@ a {
     background-color: #eee;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 
