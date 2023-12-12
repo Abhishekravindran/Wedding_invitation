@@ -587,13 +587,15 @@ a {
     cursor: pointer;
 }
 
+
+
+.animated-button {
+    animation: wiggle 1s infinite;
+}
+
 @keyframes wiggle {
     0% { transform: rotate(-5deg); }
     50% { transform: rotate(5deg); }
     100% { transform: rotate(-5deg); }
-}
-
-.animated-button {
-    animation: wiggle 1s infinite;
 }
 
