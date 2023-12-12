@@ -472,7 +472,7 @@ body {
     font-size: 10px; /* Adjust the font size to make it smaller */
 }
  */
-
+/* 
 .venue {
 	width: auto;
 	height: auto;
@@ -482,7 +482,7 @@ body {
 	color: #fff;
 	padding: 8px;
 	margin-right: 8px;
-}
+} */
 
 .venue a {
 	text-decoration: none;
@@ -576,6 +576,13 @@ a {
 
 .actions {
 	display: flex;
+	justify-content: space-between; 
 	font-size: 12px;
-	letter-spacing: 5pt;
+	letter-spacing: 0pt;
+}
+.venue {
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
 }
