@@ -599,3 +599,15 @@ a {
     100% { transform: rotate(-5deg); }
 }
 
+.cursor {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: moveCursor 1s infinite;
+        }
+@keyframes moveCursor {
+            0% { left: -20px; }
+            50% { left: 0; }
+            100% { left: -20px; }
+        }
+
