@@ -464,12 +464,12 @@ body {
 
 
 #time {
-    width: auto;
-    height: auto;
+    width: 270px;
+    height: 230px;
     padding: 5px; /* Adjust the padding to make it smaller */
     background-color: #eee;
     border-radius: 5px; /* Adjust the border-radius if needed */
-    font-size: 6px; /* Adjust the font size to make it smaller */
+    font-size: 10px; /* Adjust the font size to make it smaller */
 }
 
 
