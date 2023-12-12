@@ -6,10 +6,10 @@
       $('.sakura-falling').sakura();
 })(jQuery);
 
-// $(document).on('click', function(){
-//     document.getElementById("my_audio").play();
-//     console.log('Shaadi me zaroor aana');
-// });
+$(document).on('click', function(){
+    document.getElementById("my_audio").play();
+    console.log('Shaadi me zaroor aana');
+});
 
 // // Automatically play audio on page load
 // document.addEventListener('DOMContentLoaded', function () {
